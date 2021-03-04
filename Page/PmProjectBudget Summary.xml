@@ -200,7 +200,7 @@
             <sch:parentNodeName></sch:parentNodeName>
         </sch:BmfPageField>
         <sch:BmfPageField>
-            <sch:name>InsuranceLineId</sch:name>
+            <sch:name>TotalAmount</sch:name>
             <sch:seqNumber>300</sch:seqNumber>
             <sch:tabIndex>0</sch:tabIndex>
             <sch:tabPage></sch:tabPage>
@@ -208,7 +208,7 @@
             <sch:fieldType>Text</sch:fieldType>
             <sch:widgetType></sch:widgetType>
             <sch:refTargetType></sch:refTargetType>
-            <sch:label>InsuranceLineId</sch:label>
+            <sch:label>TotalAmount</sch:label>
             <sch:controllingParameters></sch:controllingParameters>
             <sch:domainName></sch:domainName>
             <sch:dynaDomain></sch:dynaDomain>
@@ -257,7 +257,7 @@
             <sch:parentNodeName></sch:parentNodeName>
         </sch:BmfPageField>
         <sch:BmfPageField>
-            <sch:name>StateId</sch:name>
+            <sch:name>CurrentRatio</sch:name>
             <sch:seqNumber>400</sch:seqNumber>
             <sch:tabIndex>0</sch:tabIndex>
             <sch:tabPage></sch:tabPage>
@@ -265,7 +265,7 @@
             <sch:fieldType>Text</sch:fieldType>
             <sch:widgetType></sch:widgetType>
             <sch:refTargetType></sch:refTargetType>
-            <sch:label>StateId</sch:label>
+            <sch:label>CurrentRatio</sch:label>
             <sch:controllingParameters></sch:controllingParameters>
             <sch:domainName></sch:domainName>
             <sch:dynaDomain></sch:dynaDomain>
@@ -371,7 +371,7 @@
             <sch:parentNodeName></sch:parentNodeName>
         </sch:BmfPageField>
         <sch:BmfPageField>
-            <sch:name>DefaultContentVersionId</sch:name>
+            <sch:name>JobPositionId</sch:name>
             <sch:seqNumber>1000</sch:seqNumber>
             <sch:tabIndex>0</sch:tabIndex>
             <sch:tabPage></sch:tabPage>
@@ -379,7 +379,7 @@
             <sch:fieldType>Text</sch:fieldType>
             <sch:widgetType></sch:widgetType>
             <sch:refTargetType></sch:refTargetType>
-            <sch:label>DefaultContentVersionId</sch:label>
+            <sch:label>JobPositionId</sch:label>
             <sch:controllingParameters></sch:controllingParameters>
             <sch:domainName></sch:domainName>
             <sch:dynaDomain></sch:dynaDomain>
@@ -428,7 +428,7 @@
             <sch:parentNodeName></sch:parentNodeName>
         </sch:BmfPageField>
         <sch:BmfPageField>
-            <sch:name>InitialContentVersionId</sch:name>
+            <sch:name>JobPositionLevelId</sch:name>
             <sch:seqNumber>1100</sch:seqNumber>
             <sch:tabIndex>0</sch:tabIndex>
             <sch:tabPage></sch:tabPage>
@@ -436,7 +436,7 @@
             <sch:fieldType>Text</sch:fieldType>
             <sch:widgetType></sch:widgetType>
             <sch:refTargetType></sch:refTargetType>
-            <sch:label>InitialContentVersionId</sch:label>
+            <sch:label>JobPositionLevelId</sch:label>
             <sch:controllingParameters></sch:controllingParameters>
             <sch:domainName></sch:domainName>
             <sch:dynaDomain></sch:dynaDomain>

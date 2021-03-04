@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<sch:ObjectType xmlns:sch="http://Baf.com/schemas" name="Project">
-    <sch:name>Project</sch:name>
+<sch:ObjectType xmlns:sch="http://Baf.com/schemas" name="PmProjectBudget">
+    <sch:name>PmProjectBudget</sch:name>
     <sch:tableType>System</sch:tableType>
     <sch:archeType>NORMAL</sch:archeType>
-    <sch:parentTypeName>ProjectManagement</sch:parentTypeName>
+    <sch:parentTypeName>PmProject</sch:parentTypeName>
     <sch:accessMode>TableDirect</sch:accessMode>
     <sch:primaryField></sch:primaryField>
     <sch:primaryKey></sch:primaryKey>
@@ -16,22 +16,11 @@
     <sch:changeFields></sch:changeFields>
     <sch:bmfRelationships>
         <sch:BmfObjectRelationship>
-            <sch:type>REF_TO_MANY</sch:type>
-            <sch:name>ProjectBudget</sch:name>
-            <sch:displayName></sch:displayName>
-            <sch:description></sch:description>
-            <sch:relatedObjectType>ProjectBudget</sch:relatedObjectType>
-            <sch:joinField></sch:joinField>
-            <sch:lowerBound>0</sch:lowerBound>
-            <sch:upperBound>-1</sch:upperBound>
-            <sch:containment>false</sch:containment>
-        </sch:BmfObjectRelationship>
-        <sch:BmfObjectRelationship>
             <sch:type>REF_TO_ONE</sch:type>
-            <sch:name>ContractId</sch:name>
+            <sch:name>StateId</sch:name>
             <sch:displayName></sch:displayName>
             <sch:description></sch:description>
-            <sch:relatedObjectType>Contract</sch:relatedObjectType>
+            <sch:relatedObjectType>State</sch:relatedObjectType>
             <sch:joinField></sch:joinField>
             <sch:lowerBound>0</sch:lowerBound>
             <sch:upperBound>1</sch:upperBound>
@@ -39,7 +28,7 @@
         </sch:BmfObjectRelationship>
         <sch:BmfObjectRelationship>
             <sch:type>REF_TO_ONE</sch:type>
-            <sch:name>OfferingTimeItemId</sch:name>
+            <sch:name>TimeItemId</sch:name>
             <sch:displayName></sch:displayName>
             <sch:description></sch:description>
             <sch:relatedObjectType>TimeItem</sch:relatedObjectType>
@@ -48,12 +37,45 @@
             <sch:upperBound>1</sch:upperBound>
             <sch:containment>false</sch:containment>
         </sch:BmfObjectRelationship>
+        <sch:BmfObjectRelationship>
+            <sch:type>REF_TO_ONE</sch:type>
+            <sch:name>InsuranceLineId</sch:name>
+            <sch:displayName></sch:displayName>
+            <sch:description></sch:description>
+            <sch:relatedObjectType>InsuranceLine</sch:relatedObjectType>
+            <sch:joinField></sch:joinField>
+            <sch:lowerBound>0</sch:lowerBound>
+            <sch:upperBound>1</sch:upperBound>
+            <sch:containment>false</sch:containment>
+        </sch:BmfObjectRelationship>
+        <sch:BmfObjectRelationship>
+            <sch:type>REF_TO_ONE</sch:type>
+            <sch:name>DefaultContentVersionId</sch:name>
+            <sch:displayName></sch:displayName>
+            <sch:description></sch:description>
+            <sch:relatedObjectType>ContentVersion</sch:relatedObjectType>
+            <sch:joinField></sch:joinField>
+            <sch:lowerBound>0</sch:lowerBound>
+            <sch:upperBound>1</sch:upperBound>
+            <sch:containment>false</sch:containment>
+        </sch:BmfObjectRelationship>
+        <sch:BmfObjectRelationship>
+            <sch:type>REF_TO_ONE</sch:type>
+            <sch:name>InitialContentVersionId</sch:name>
+            <sch:displayName></sch:displayName>
+            <sch:description></sch:description>
+            <sch:relatedObjectType>ContentVersion</sch:relatedObjectType>
+            <sch:joinField></sch:joinField>
+            <sch:lowerBound>0</sch:lowerBound>
+            <sch:upperBound>1</sch:upperBound>
+            <sch:containment>false</sch:containment>
+        </sch:BmfObjectRelationship>
     </sch:bmfRelationships>
     <sch:bmfFields>
         <sch:BmfObjectField>
-            <sch:name>ExtractStatus</sch:name>
+            <sch:name>Status</sch:name>
             <sch:dataType>Char</sch:dataType>
-            <sch:enumName>ExtractStatus</sch:enumName>
+            <sch:enumName>Status</sch:enumName>
             <sch:length>256</sch:length>
             <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
@@ -83,7 +105,7 @@
             <sch:changeFields></sch:changeFields>
         </sch:BmfObjectField>
         <sch:BmfObjectField>
-            <sch:name>PolicyTypeCode</sch:name>
+            <sch:name>Status</sch:name>
             <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>256</sch:length>
@@ -99,7 +121,87 @@
             <sch:changeFields></sch:changeFields>
         </sch:BmfObjectField>
         <sch:BmfObjectField>
+            <sch:name>NewBusinessDate</sch:name>
+            <sch:dataType>DateTime</sch:dataType>
+            <sch:enumName></sch:enumName>
+            <sch:length></sch:length>
+            <sch:scale></sch:scale>
+            <sch:autoIncrement>false</sch:autoIncrement>
+            <sch:calculated>false</sch:calculated>
+            <sch:encrypted>false</sch:encrypted>
+            <sch:seqStart>0</sch:seqStart>
+            <sch:seqPattern></sch:seqPattern>
+            <sch:calcExpr></sch:calcExpr>
+            <sch:description></sch:description>
+            <sch:changeType></sch:changeType>
+            <sch:changeFields></sch:changeFields>
+        </sch:BmfObjectField>
+        <sch:BmfObjectField>
+            <sch:name>RenewalDate</sch:name>
+            <sch:dataType>DateTime</sch:dataType>
+            <sch:enumName></sch:enumName>
+            <sch:length></sch:length>
+            <sch:scale></sch:scale>
+            <sch:autoIncrement>false</sch:autoIncrement>
+            <sch:calculated>false</sch:calculated>
+            <sch:encrypted>false</sch:encrypted>
+            <sch:seqStart>0</sch:seqStart>
+            <sch:seqPattern></sch:seqPattern>
+            <sch:calcExpr></sch:calcExpr>
+            <sch:description></sch:description>
+            <sch:changeType></sch:changeType>
+            <sch:changeFields></sch:changeFields>
+        </sch:BmfObjectField>
+        <sch:BmfObjectField>
+            <sch:name>PublishDate</sch:name>
+            <sch:dataType>DateTime</sch:dataType>
+            <sch:enumName></sch:enumName>
+            <sch:length></sch:length>
+            <sch:scale></sch:scale>
+            <sch:autoIncrement>false</sch:autoIncrement>
+            <sch:calculated>false</sch:calculated>
+            <sch:encrypted>false</sch:encrypted>
+            <sch:seqStart>0</sch:seqStart>
+            <sch:seqPattern></sch:seqPattern>
+            <sch:calcExpr></sch:calcExpr>
+            <sch:description></sch:description>
+            <sch:changeType></sch:changeType>
+            <sch:changeFields></sch:changeFields>
+        </sch:BmfObjectField>
+        <sch:BmfObjectField>
             <sch:name>Guid</sch:name>
+            <sch:dataType>Char</sch:dataType>
+            <sch:enumName></sch:enumName>
+            <sch:length>256</sch:length>
+            <sch:scale></sch:scale>
+            <sch:autoIncrement>false</sch:autoIncrement>
+            <sch:calculated>false</sch:calculated>
+            <sch:encrypted>false</sch:encrypted>
+            <sch:seqStart>0</sch:seqStart>
+            <sch:seqPattern></sch:seqPattern>
+            <sch:calcExpr></sch:calcExpr>
+            <sch:description></sch:description>
+            <sch:changeType></sch:changeType>
+            <sch:changeFields></sch:changeFields>
+        </sch:BmfObjectField>
+        <sch:BmfObjectField>
+            <sch:name>Notes</sch:name>
+            <sch:dataType>Char</sch:dataType>
+            <sch:enumName></sch:enumName>
+            <sch:length>256</sch:length>
+            <sch:scale></sch:scale>
+            <sch:autoIncrement>false</sch:autoIncrement>
+            <sch:calculated>false</sch:calculated>
+            <sch:encrypted>false</sch:encrypted>
+            <sch:seqStart>0</sch:seqStart>
+            <sch:seqPattern></sch:seqPattern>
+            <sch:calcExpr></sch:calcExpr>
+            <sch:description></sch:description>
+            <sch:changeType></sch:changeType>
+            <sch:changeFields></sch:changeFields>
+        </sch:BmfObjectField>
+        <sch:BmfObjectField>
+            <sch:name>Description</sch:name>
             <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>256</sch:length>

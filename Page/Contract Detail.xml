@@ -258,15 +258,15 @@
             <sch:parentNodeName></sch:parentNodeName>
         </sch:BmfPageField>
         <sch:BmfPageField>
-            <sch:name>ProjectId</sch:name>
+            <sch:name>PmProjectId</sch:name>
             <sch:seqNumber>450</sch:seqNumber>
             <sch:tabIndex>0</sch:tabIndex>
             <sch:tabPage></sch:tabPage>
             <sch:pageAreaName></sch:pageAreaName>
             <sch:fieldType>ObjectSelector</sch:fieldType>
             <sch:widgetType></sch:widgetType>
-            <sch:refTargetType>Project</sch:refTargetType>
-            <sch:label>ProjectId</sch:label>
+            <sch:refTargetType>PmProject</sch:refTargetType>
+            <sch:label>PmProjectId</sch:label>
             <sch:controllingParameters></sch:controllingParameters>
             <sch:domainName></sch:domainName>
             <sch:dynaDomain></sch:dynaDomain>

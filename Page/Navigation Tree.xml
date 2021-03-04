@@ -240,17 +240,17 @@
             <sch:description></sch:description>
         </sch:BmfTreeNode>
         <sch:BmfTreeNode>
-            <sch:tableName>Project</sch:tableName>
+            <sch:tableName>PmProject</sch:tableName>
             <sch:type>Collection</sch:type>
             <sch:seqIndex>7100</sch:seqIndex>
-            <sch:format>Project(%s)</sch:format>
+            <sch:format>PmProject(%s)</sch:format>
             <sch:columns>#count</sch:columns>
             <sch:action></sch:action>
             <sch:quoteDisplay>true</sch:quoteDisplay>
             <sch:description></sch:description>
         </sch:BmfTreeNode>
         <sch:BmfTreeNode>
-            <sch:tableName>Project</sch:tableName>
+            <sch:tableName>PmProject</sch:tableName>
             <sch:type>Item</sch:type>
             <sch:seqIndex>7100</sch:seqIndex>
             <sch:format>%s</sch:format>
@@ -260,17 +260,17 @@
             <sch:description></sch:description>
         </sch:BmfTreeNode>
         <sch:BmfTreeNode>
-            <sch:tableName>ProjectBudget</sch:tableName>
+            <sch:tableName>PmProjectBudget</sch:tableName>
             <sch:type>Collection</sch:type>
             <sch:seqIndex>7100</sch:seqIndex>
-            <sch:format>ProjectBudget(%s)</sch:format>
+            <sch:format>PmProjectBudget(%s)</sch:format>
             <sch:columns>#count</sch:columns>
             <sch:action></sch:action>
             <sch:quoteDisplay>true</sch:quoteDisplay>
             <sch:description></sch:description>
         </sch:BmfTreeNode>
         <sch:BmfTreeNode>
-            <sch:tableName>ProjectBudget</sch:tableName>
+            <sch:tableName>PmProjectBudget</sch:tableName>
             <sch:type>Item</sch:type>
             <sch:seqIndex>7100</sch:seqIndex>
             <sch:format>%s</sch:format>
